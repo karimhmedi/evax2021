@@ -95,7 +95,8 @@ body{
     color: #414141 !important;
 }
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Montserrat' , sans-serif !important;
+    font-family: 'Droid Arabic Kufi', serif !important;
+    
 }
 
 /************SCROLLBAR************/
@@ -416,8 +417,8 @@ cursor: pointer;
 }
 
 .navbar .nav-item a.nav-link{
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Droid Arabic Kufi', serif !important;
+    font-size: 1rem;
     color: rgb(255, 255, 255) !important;
     text-decoration: none;
     margin-right: 30px;
@@ -431,8 +432,9 @@ cursor: pointer;
 }
 
 .fixed-menu .navbar-nav .nav-item a.nav-link{
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;;
+    
+    font-family: 'Droid Arabic Kufi', serif !important;
+    font-size: 1rem;
     color: rgb(12, 12, 12) !important;
     text-decoration: none;
     margin-right: 30px;
@@ -483,8 +485,9 @@ cursor: pointer;
     border-color: #94cb00;
 }
 a.navbar-btn{
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;;
+    
+    font-family: 'Droid Arabic Kufi', serif !important;
+    font-size: 1rem;
     color: rgb(255, 255, 255) !important;
     text-decoration: none;
 }
@@ -618,7 +621,7 @@ nav.fill ul li a:hover:after, nav.fill ul li a.active:after {
 
 .main-content .main-heading{
     font-size: 60px;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif ;
     font-weight: bold;
     line-height: 1.1;
     text-align: left;
@@ -633,8 +636,8 @@ nav.fill ul li a:hover:after, nav.fill ul li a.active:after {
 }
 
 .main-content .sub_heading{
-    font-size: 15px;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
+    font-size: 1rem;
     line-height: 2;
     text-align: left;
 }
@@ -811,7 +814,7 @@ nav.fill ul li a:hover:after, nav.fill ul li a.active:after {
 
 a.btn{
     font-size: 12px;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Droid Arabic Kufi', serif !important;
     color: rgb(255, 255, 255) !important;
     text-decoration: none;
     line-height: 1.8;
@@ -828,7 +831,7 @@ a.btn{
 
 .custom-box .box-text{
     font-size: 28px;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
     font-weight: 600;
     line-height: 1.143;
     text-align: left;
@@ -840,7 +843,7 @@ a.btn{
 
 .custom-box .grey-text{
     font-size: 28px;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
     font-weight: 600;
     line-height: 1.143;
     text-align: left;
@@ -1293,7 +1296,7 @@ ul.social-icon li a{
     text-decoration: none;
     color: #f31f1f !important;
     font-size: 20px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
     cursor: pointer;
 }
 
@@ -1328,20 +1331,20 @@ ul.social-icon li a{
 
 .main-headingsub {
     font-size: 30px;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
     letter-spacing: -3px;
     font-weight: normal;
 }
 
 .main-heading{
     font-size: 45px;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
     letter-spacing: -3px;
     font-weight: normal;
 }
 .sub-heading{
     font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
    
         /*border: 1px solid #000000;*/
       /*  white-space: pre-wrap;
@@ -1606,7 +1609,7 @@ ul.social-icon li a{
 
 .team-box .team-content p {
     font-size: 12px;
-    font-family: 'Open Sans' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
 }
 
 .team-box:hover .team-content,
@@ -1981,7 +1984,7 @@ ul.footer-icon li{
 
 #contactus-header .main-heading{
     font-size: 46px;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
     font-weight: 500;
 }
 
@@ -2054,7 +2057,7 @@ ul.footer-icon li{
 }
 
 .form-control{
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
 }
 #contact-description{
     padding-top: 125px;
@@ -2100,7 +2103,7 @@ header .navbar-dark-vision .navbar-btn:hover{
 }
 #about-header .main-heading{
     font-size: 46px;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
     font-weight: 500;
 }
 .width-heading{
@@ -2109,7 +2112,7 @@ header .navbar-dark-vision .navbar-btn:hover{
 }
 .about-heading{
     font-size: 22px;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
 }
 .about-content span{
     font-size: 40px;
@@ -2146,7 +2149,7 @@ header .navbar-dark-vision .navbar-btn:hover{
 }
 .count-title {
     font-size: 30px;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
     color: #94cb00;
     font-weight: bold;
     line-height: 1.333;
@@ -2190,7 +2193,7 @@ header .navbar-dark-vision .navbar-btn:hover{
 }
 .courses .main-heading{
     font-size: 23px;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
     letter-spacing: -1px;
     font-weight: 400;
     margin-top: 15px;
@@ -2200,7 +2203,7 @@ header .navbar-dark-vision .navbar-btn:hover{
 }
 .courses .sub-heading{
     font-size: 13px;
-    font-family: 'Open Sans' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
     margin-bottom: 15px;
 }
 .courses .navbar-btn{
@@ -2219,7 +2222,7 @@ header .navbar-dark-vision .navbar-btn:hover{
 }
 .course-link{
     text-decoration: none;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
     -webkit-transition: 0.5s ease;
     -o-transition: 0.5s ease;
     transition: 0.5s ease;
@@ -2430,7 +2433,7 @@ span.sub-heading.text-white{
 }
 .accordion__title {
     font-size: 1.25rem;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
     font-weight: 500;
     line-height: 1.2;
     padding: 15px 15px 15px 40px;
@@ -2520,7 +2523,7 @@ span.sub-heading.text-white{
     box-shadow: 0 0 0 0.2rem transparent;
 }
 .form-control{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
 }
 .btn-search {
     background-color: #94cb00;
@@ -2554,7 +2557,7 @@ span.sub-heading.text-white{
     padding-left: 42px;
     padding-top: 30px;
     padding-bottom: 10px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
 }
 
 .topic_outerbox ul{
@@ -2567,7 +2570,7 @@ span.sub-heading.text-white{
     padding-bottom: 7px;
     font-weight: 500;
     overflow:hidden !important;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
 }
 .topic_outerbox li a{
     text-decoration: none;
@@ -2609,7 +2612,7 @@ span.sub-heading.text-white{
     padding-left: 42px;
     padding-top: 30px;
     padding-bottom: 10px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
 }
 .pt-lg-4{
     padding-top: 2rem;
@@ -2637,13 +2640,13 @@ span.sub-heading.text-white{
     transition: .2s ease;
     line-height: 18px;
     letter-spacing: 0;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
 }
 .date{
     color: gray;
     font-size: 14px;
     margin-bottom: 4px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
 }
 .text_post span{
     font-weight: 500;
@@ -2653,7 +2656,7 @@ span.sub-heading.text-white{
     -o-transition: .2s ease;
     transition: .2s ease;
     letter-spacing: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
 }
 .main:hover{
     color:#00b0cd;
@@ -2673,7 +2676,7 @@ span.sub-heading.text-white{
     padding-left: 42px;
     padding-top: 30px;
     padding-bottom: 10px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
 }
 span{
     display: unset;
@@ -2695,7 +2698,7 @@ span{
     padding: 5px 12px 5px 12px;
     margin-top: 9px;
     display: inline-block;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
 }
 .sale_img{
     width: 100%;
@@ -2718,7 +2721,7 @@ span{
     font-size: 25px;
     color: #5f5d5d;
     font-weight: 500;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
     letter-spacing: 0;
     -webkit-transition: 0.2s ease;
     -o-transition: 0.2s ease;
@@ -2732,7 +2735,7 @@ span{
     color: #94cb00;
     font-size: 15px;
     font-weight: 400;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
     margin-top: 0;
 }
 .verticle_line{
@@ -2750,13 +2753,13 @@ span{
     -webkit-transition: 0.2s ease;
     -o-transition: 0.2s ease;
     transition: 0.2s ease;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
 }
 .text_minimal span:hover{
     color:#00bcd4;
 }
 .text_dummy{
-    font-family: 'Open Sans' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
     margin-top: 15px;
     letter-spacing: 0.2px;
 }
@@ -2812,14 +2815,14 @@ span{
 .box4 .box-content{width:100%;height:100%;position:absolute;top:0;left:0;-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);-webkit-transition:all .3s ease 0s;-o-transition:all .3s ease 0s;transition:all .3s ease 0s; z-index: 1; margin-top: 100px;text-align: center}
 .box4 .icon,.box5 .icon{list-style:none;padding:0}
 .box4:hover .box-content{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}
-.box4 .title{font-size:22px;font-family:'Raleway' , sans-serif;font-weight:700;color:#fff;margin:0 0 10px; z-index: 1}
+.box4 .title{font-size:22px;font-family: 'Droid Arabic Kufi', serif !important;font-weight:700;color:#fff;margin:0 0 10px; z-index: 1}
 .box4 .post{
     display:block;
     font-size:20px;
     font-weight:600;
     color:#fff;
     margin-bottom: 5px;
-    font-family:'Raleway' , sans-serif
+    font-family: 'Droid Arabic Kufi', serif !important;
 }
 .box4 .icon{margin:0}
 .box4 .icon li{display:inline-block}
@@ -2929,7 +2932,7 @@ a.page-link{
 
 .blog_detail-heading{
     font-size: 26px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
 }
 .text_minimal ul{
     color: #333333;
@@ -2953,7 +2956,7 @@ a.page-link{
     margin-top: 50px;
     text-align: right;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
 }
 .quote_text:hover .quote{
     color: #00b0cd;
@@ -2999,7 +3002,7 @@ a.page-link{
 }
 .main_written{
     font-size: 24px;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
 }
 .comment_text{
     font-size: 24px;
@@ -3046,7 +3049,7 @@ a.page-link{
 
 /***********GALLERY SECTION PORTFOLIO HOVER EFFECT***********/
 [class*=' imghvr-'],[class^=imghvr-]{
-    font-family:Montserrat,sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
     position:relative;
     display:inline-block;
     margin:0;
@@ -3080,7 +3083,7 @@ a.page-link{
     margin-bottom:2px;
 }
 [class*=' imghvr-'] p,[class^=imghvr-] p{
-    font-family:'Montserrat', sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
     font-size: 18px;
     color: white;
 }
@@ -3445,7 +3448,7 @@ a.page-link{
 }
 .cbp-l-filters .cbp-filter-item span {
     font-size: 16px;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
     display: inline-block;
     -webkit-transition: 0.5s ease;
     -o-transition: 0.5s ease;
@@ -3934,7 +3937,7 @@ input:-webkit-autofill {
     margin: 0;
     padding: 0;
     font-weight: bold;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
     font-size: 25px;
     margin-bottom: 20px;
 }
@@ -3990,7 +3993,7 @@ input, select{
     padding: 5px 0;
     color: #222;
     margin-bottom: 23px;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: 'Droid Arabic Kufi', serif !important;
 }
 
 input:focus, select:focus {
