@@ -34,6 +34,15 @@ body{
     color: #5f5d5d;
 }
 
+.pr-0
+{
+    padding-right: 0px !important;
+    
+}
+
+.pt-lg-10{
+    padding-left: 0px !important;
+}
 .cut-text { text-overflow: ellipsis;  height:150px ; overflow: hidden; width: 200px; height: 1.2em; white-space: nowrap; }
 
 .content-center
@@ -617,7 +626,7 @@ nav.fill ul li a:hover:after, nav.fill ul li a.active:after {
 /***************MAIN CONTENT ON BACKGROUND IMAGE*****************/
 
 .main-content .main-heading{
-    font-size: 60px;
+    font-size: 40px;
     font-family: 'Montserrat' , sans-serif;
     font-weight: bold;
     line-height: 1.1;
@@ -819,7 +828,7 @@ a.btn{
 }
 
 .custom-box{
-    padding: 30px 13px;
+    /*padding: 30px 13px;*/
     position: relative;
     -webkit-transition: 0.8s ease;
     -o-transition: 0.8s ease;
@@ -830,8 +839,8 @@ a.btn{
     font-size: 28px;
     font-family: 'Montserrat' , sans-serif;
     font-weight: 600;
-    line-height: 1.143;
-    text-align: left;
+    line-height: 2.06;
+    text-align: center;
     letter-spacing: 0;
     position: relative;
     color: #ffffff;
@@ -1197,7 +1206,7 @@ ul.social-icon li a{
 
 .image-div{
     width: 100%;
-    height: 216px;
+   /* height: 216px;*/
     overflow: hidden;
 }
 .mini-slider .carousel .animation1{

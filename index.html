@@ -44,7 +44,7 @@
 
 
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="150">
+<body data-spy="scroll" data-target=".navbar" data-offset="150" onload=showDate();>
 
 <!--  PRELOADER  -->
 <div class="loader1">
@@ -100,7 +100,7 @@
                     <a class="text-black btn wrang-btn rounded-pill navbar-btn "  data-toggle="modal" data-target=".modal" style="color: #414141">Espace Citoyen</a>
                     <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                    <a class="nav-link arabe"  style="color: #fff" href="./ar/">العربية </a>
+                    <a class="nav-link arabe"  style="color: #fff" href="./ar/index.html">العربية </a>
                     </li>
                     </ul>
                
@@ -135,7 +135,7 @@
             <a class="text-black btn wrang-btn rounded-pill navbar-btn "  data-toggle="modal" data-target=".modal" style="color: #414141">Espace Citoyen</a>
             <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-            <a class="nav-link arabe"  style="color: #fff" href="./ar/">العربية </a>
+            <a class="nav-link arabe"  style="color: #fff" href="./ar/index.html">العربية </a>
             </li>
             </ul>
         </nav>
@@ -167,10 +167,8 @@
 
                         <div class="social_icon">
                             <ul class="social-icon">
-                                <li class="fb"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li class="twit"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li class="linkedin"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li class="insta"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li class="fb"><a href="http://www.facebook.com/186480324724413" target="blanck"><i class="fab fa-facebook-f"></i></a></li>
+                               
                             </ul>
                         </div>
 
@@ -180,7 +178,7 @@
                                 <div class="col-sm-12 col-lg-5 d-flex justify-content-center align-items-center">
                                 <div class="row margin-top-sm">
 
-                                    <div class="col-6 mini-slider p-0">
+                                    <div class="col-6 mini-slider pl-0 pr-0">
 
                                         <div id="carouselExampleSlidesOnly" class="carousel slide image-div" data-ride="carousel">
                                             <div class="carousel-inner">
@@ -199,16 +197,18 @@
 
                                     </div>
 
-                                    <div class="col-6 p-0">
+                                    <div class="col-6 pr-0 pl-0">
                                         <a href="#" class="text-decoration-none">
                                         <div class="custom-box bg-grey-color">
                                             <div class="bg-study-icon">
                                                 <i class="las la-mobile"></i>
                                             </div>
-                                            <h3 style="font-size: 18px; white-space:pre-line" class="box-text mb-sm-2 mt-sm-2 mb-md-3 mt-md-3 mb-lg-3 mt-lg-3">Pour vous inscrire :
-                                                Par SMS : 85355 
-                                                Par USSD : *2021# 
-                                                Par internet :www.evax.tn </h3>
+                                            <h3 style="font-size: 18px; white-space:pre-line" class="box-text mb-sm-2 mt-sm-2 mb-md-3 mt-md-3 mb-lg-3 mt-lg-3">
+                                                Nombre d'inscrits :
+                                                <span class="h2">526120</span>
+                                                <span id='horloge'></span>
+                                                <span id='today'></span>
+                                            </h3>
                                             <div class="arrowred-box">
                                                 <i class="las la-arrow-right"></i>
                                             </div>
@@ -251,7 +251,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-lg-8 offset-lg-2 text-center mb-4 mt-4">
-                <h1 class="main-heading red-color">Questions Frequentes sur <span class="yellow-color"> EVAX</span></h1>
+                <h1 class="main-heading red-color">Questions Frequentes sur  EVAX</h1>
                 
             </div>
         </div>
@@ -279,8 +279,8 @@
                         <div class="feature-icon grey-color">
                             <i class="las la-syringe"></i>
                         </div>
-                        <h4 class="card-title">Qu’est ce que c’est un vaccin ?</h4>
-                        <p class="card-text sub-heading">Le vaccin est administré aux êtres vivants, y compris les être humains, pour provoquer le développement  d’une immunité contre certaines maladies considérées comme grave au niveau individuel et/ou sur la santé publique.</p>
+                        <h4 class="card-title">Quels sont les objectifs de la vaccination ?</h4>
+                        <p class="card-text sub-heading">Le premier objectif de la vaccination, c’est de faire baisser le nombre des formes graves de COVID-19. Les résultats des études cliniques des candidats vaccins semblent converger pour démontrer un fait principal : la vaccination permet de réduire massivement la mortalité due au virus et à ses formes graves.</p>
                     </div>
                 </div>
             </div>
@@ -291,8 +291,16 @@
                         <div class="feature-icon red-color">
                             <i class="las la-exclamation-circle"></i>
                         </div>
-                        <h4 class="card-title">Le vaccin Covid-19 sera-t-il obligatoire ?</h4>
-                        <p class="card-text sub-heading">Non le vaccin n’est pas obligatoire en Tunisie, mais il se pourrait que dans le future certains pays vont exiger un certificat de vaccination pour permettre l’entrer sur leurs territoires.</p>
+                        <h4 class="card-title">Quels sont les grands principes de la stratégie de vaccination contre la COVID-19 ?</h4>
+                        <p class="card-text sub-heading cut-text">
+                            
+                            <ul style="list-style-type: disc;">
+                                La Tunisie s’est fixé les principes suivants : <br>
+                                <li>1  à 2 grand (s) centre(s) par gouvernorat ouvert toute la semaine</li>
+                                <li>Et un centre par délégation à identifier par direction régionale de la santé ouvert le weekend</li>
+   
+                              </ul>
+                            </p>
                     </div>
                 </div>
             </div>
@@ -309,9 +317,8 @@
                             
                             <ul style="list-style-type: disc;">
                                 Il y aura environ 200 centres de vaccination à raison de : <br>
-                                <li>1  à 2 grand (s) centre(s) par gouvernorat ouvert toute la semaine</li>
-                                <li>Et un centre par délégation à identifier par direction régionale de la santé ouvert le weekend</li>
-   
+                                <li>un accès équitable pour des vaccins gratuits, efficaces, sûrs et de qualité approuvés par les données scientifiques en temps opportun</li>
+                                <li>une prise de décision personnelle basée sur des données transparentes et compréhensibles
                               </ul>
                             </p>
                     </div>
@@ -339,8 +346,8 @@
                         <div class="feature-icon grey-color">
                             <i class="lar la-chart-bar"></i>
                         </div>
-                        <h2 class="card-title">Quel sera le taux d’efficacité du vaccin?</h2>
-                        <p class="card-text sub-heading">L’efficacité minimale recommandée par l’Organisation Mondiale de la Santé est de 50%. La plupart des vaccins approuvée ou très avancés dans le procès ont une efficacité qui varie entre 70% et 95%.</p>
+                        <h2 class="card-title">Que faire en cas de problème lors de l'inscription?</h2>
+                        <p class="card-text sub-heading">Un numéro vert gratuit a été mis en place pour accompagner les citoyens tout au long de la campagne de vaccination. Le numéro vert : 80102021, ouvert du lundi au vendredi de 0h à 17h</p>
                     </div>
                 </div>
             </div>
@@ -348,12 +355,18 @@
 
 
         </div>
-        <div class="row mt-4 mb-4 col-12 content-center">
+       <!-- <div class="row mt-4 mb-4 col-12 content-center">
             <div class="col-12 row content-center"><a class="btn btn-red rounded-pill red-btn" href="faq.html#faq"> + Voir Plus des Questions Frequentes...</a></div>
         </div>
+    -->
+ 
+    </div>
+    <div class="row mt-4 mb-4 col-12 content-center">
+       
     </div>
 </section>
 
+<!--
 <section id="get-admission" class="bg-admission-img">
 
     <div class="overlay-admission"></div>
@@ -370,7 +383,7 @@
             </div>
         </div>
 </section>
-
+-->
 <!--
     <section id="info" class="stats bg-light-gray section-padding col-12">
         
@@ -418,7 +431,7 @@
         </div>
     </section>
 -->
-
+<!--
 <section>
 
 <div class="row-mt-4 mb-4" style="margin-top: 100px !important;"></div>
@@ -500,13 +513,13 @@
 </div>
 
 </section>
+-->
 
-
-<section id="our-process" class="section-padding bg-red">
+<section id="our-process" class="section-padding bg-red mt-4">
     <div class="svg-process-top-holder">
         <div class="svg-process-top"></div>
     </div>
-    <div class="container">
+    <div class="container col-12">
         <div class="row">
             <div class="col-md-12 col-sm-12 text-center">
                 <div class="heading-title whitecolor wow fadeInUp" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
@@ -515,7 +528,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row col-12">
             <ul class="process-wrapp">
                 <li class="whitecolor wow fadeIn active" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeIn;">
                     <span class="pro-step bottom20">01</span>
@@ -615,12 +628,11 @@
         <div class="row">
             <div class="col-12 text-center footer-content">
                 <ul class="footer-icon">
-                    <li class="footer_list"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="footer_list"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li class="footer_list"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="footer_list"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="footer_list"><a href="http://www.facebook.com/186480324724413"><i class="fab fa-facebook-f"></i></a></li>
                 </ul>
-                <p class="sub-heading footer_text text-black"><i class="far fa-copyright"></i>2021 Centre National de l'Informatique CNI</p>
+                <p class="sub-heading footer_text text-black"><i class="far fa-copyright"></i>eVAX est le résultat d'un travail et d'un engagement patriotique commun des équipes du CNI, ISIE, CIMS, ANSI, les opérateurs(TT, Ooredoo et Orange), Ministère de la Santé et le Ministère des Technologies de la Communication.
+                    Lorsque vous cliquez sur le bouton "Ajouter une demande d'inscription" de votre formulaire de demande d'inscription sur evax.tn, vous indiquez que vous connaissez les conditions générales. Politique de confidentialité . Vous acceptez volontairement les termes et conditions fournis.
+                    République de Tunisie - Ministère de la Santé - Portail d’inscription à la campagne de vaccination contre la COVID 19 - Tous droits réservés © 2021</p>
 
             </div>
         </div>
@@ -645,6 +657,7 @@
 <script src="./vendor/js/contact_us.js"></script>
 <script src="./vendor/js/script.js"></script>
 <script src="./vendor/js/custom.js"></script>
+<script src="./vendor/js/time.js"></script>
 </body>
 
 </html>

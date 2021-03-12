@@ -49,7 +49,7 @@ body{
 
 
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="150">
+<body data-spy="scroll" data-target=".navbar" data-offset="150" onload=showDate();>
 
 <!--  PRELOADER  -->
 <div class="loader1">
@@ -103,7 +103,7 @@ body{
                     <a class="text-black btn wrang-btn rounded-pill navbar-btn "  data-toggle="modal" data-target=".modal" style="color: #414141">حساب المواطن</a>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                        <a class="nav-link"  style="color: #fff" href="../">Francais </a>
+                        <a class="nav-link"  style="color: #fff" href="../index.html">Francais </a>
                         </li>
                         </ul>
                 </div>
@@ -165,10 +165,8 @@ body{
 
                         <div class="social_icon">
                             <ul class="social-icon">
-                                <li class="fb"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li class="twit"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li class="linkedin"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li class="insta"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li class="fb"><a href="http://www.facebook.com/186480324724413"><i class="fab fa-facebook-f"></i></a></li>
+                                
                             </ul>
                         </div>
 
@@ -178,18 +176,18 @@ body{
                                 <div class="col-sm-12 col-lg-5 d-flex justify-content-center align-items-center">
                                 <div class="row margin-top-sm">
 
-                                    <div class="col-6 mini-slider p-0">
+                                    <div class="col-6 mini-slider pl-0 pr-0">
 
                                         <div id="carouselExampleSlidesOnly" class="carousel slide image-div" data-ride="carousel">
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
-                                                    <img class="d-block w-100" src="vendor/img/box-img1.jpg" alt="First slide">
+                                                    <img class="d-block w-100" src="../vendor/img/box-img1.jpg" alt="First slide">
                                                 </div>
                                                 <div class="carousel-item animation1">
-                                                    <img class="d-block w-100" src="vendor/img/box-img2.jpg" alt="Second slide">
+                                                    <img class="d-block w-100" src="../vendor/img/box-img2.jpg" alt="Second slide">
                                                 </div>
                                                 <div class="carousel-item animation2">
-                                                    <img class="d-block w-100" src="vendor/img/box-img3.jpg" alt="Second slide">
+                                                    <img class="d-block w-100" src="../vendor/img/box-img3.jpg" alt="Second slide">
                                                 </div>
 
                                             </div>
@@ -197,16 +195,18 @@ body{
 
                                     </div>
 
-                                    <div class="col-6 p-0">
+                                    <div class="col-6 pr-0 pl-0">
                                         <a href="#" class="text-decoration-none">
                                         <div class="custom-box bg-grey-color">
                                             <div class="bg-study-icon">
                                                 <i class="las la-mobile"></i>
                                             </div>
-                                            <h3 style="font-size: 18px; white-space:pre-line" class="box-text mb-sm-2 mt-sm-2 mb-md-3 mt-md-3 mb-lg-3 mt-lg-3">للتسجيل :
-                                                Par SMS : 85355 
-                                                Par USSD : *2021# 
-                                                Par internet : www.evax.tn </h3>
+                                            <h3 style="font-size: 18px; white-space:pre-line" class="box-text mb-sm-2 mt-sm-2 mb-md-3 mt-md-3 mb-lg-3 mt-lg-3">
+                                                عدد المسجلين :
+                                                <span class="h2">526120</span>
+                                                <span id='horloge'></span>
+                                                <span id='today'></span>
+                                            </h3>
                                             <div class="arrowred-box">
                                                 <i class="las la-arrow-right"></i>
                                             </div>
@@ -247,7 +247,7 @@ body{
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-lg-8 offset-lg-2 text-center mb-4 mt-4">
-                <h1 class="main-heading red-color">Questions Frequentes sur <span class="yellow-color"> EVAX</span></h1>
+                <h1 class="main-heading red-color">الأسئلة المتداولة على اللقاح ايفاكس </h1>
                 
             </div>
         </div>
@@ -276,8 +276,8 @@ body{
                         <div class="feature-icon grey-color">
                             <i class="las la-syringe"></i>
                         </div>
-                        <h4 class="card-title">ما هو اللقاح ؟</h4>
-                        <p class="card-text sub-heading">يتم إعطاء اللقاح للكائنات الحية، بما في ذلك البشر، للحصول على مناعة ضد أمراض معينة تعتبر خطيرة على المستوى الفردي أو على الصحة العامة.</p>
+                        <h4 class="card-title">ما هي أهداف التلقيح؟</h4>
+                        <p class="card-text sub-heading">الهدف الأول من التلقيح هو تقليل عدد الحالات الخطيرة من الكوفيد-19 و بالتالي عدد الوفايات، و هو ما أكدته نتائج الدراسات السريرية للقاحات التي أثبتت فاعليتها.</p>
                     </div>
                 </div>
             </div>
@@ -288,8 +288,16 @@ body{
                         <div class="feature-icon red-color">
                             <i class="las la-exclamation-circle"></i>
                         </div>
-                        <h4 class="card-title">هل سيكون لقاح كوفيد-19 إلزاميًا ؟</h4>
-                        <p class="card-text sub-heading">لا ، اللقاح ليس إلزامياً في تونس ، لكن في المستقبل قد تطلب بعض الدول شهادة التلقيح للسماح بدخول أراضيها.</p>
+                        <h4 class="card-title">ما هي المبادئ الرئيسية لإستراتيجية التلقيح ضد فيروس كورونا؟</h4>
+                        <p class="card-text sub-heading cut-text">
+                            
+                            <ul style="list-style-type: disc;">
+                                وضعت تونس لنفسها المبادئ التالية:<br>
+                                <li>الحصول المنصف و في الوقت المناسب على لقاحات مجانية وفعالة ومأمونة وعالية الجودة معتمدة من الأدلة العلمية</li>
+                                <li>الحرية الشخصية على أساس الشفافية و توفير المعلومة</li>
+   
+                              </ul>
+                            </p>
                     </div>
                 </div>
             </div>
@@ -345,12 +353,20 @@ body{
 
 
         </div>
+        <!--
         <div class="row mt-4 mb-4 col-12 content-center">
             <div class="col-12 row content-center"><a class="btn btn-red rounded-pill red-btn" href="faq.html#faq"> + المزيد من الأسئلة حول اللقاح...</a></div>
         </div>
+    -->
+
+    <div class="row mt-4 mb-4 col-12 content-center mt-4 mb-4">
+        
+    </div>
+
     </div>
 </section>
 
+<!--
 <section id="get-admission" class="bg-admission-img">
 
     <div class="overlay-admission"></div>
@@ -367,7 +383,7 @@ body{
             </div>
         </div>
 </section>
-
+-->
 <!--
     <section id="info" class="stats bg-light-gray section-padding col-12">
         
@@ -415,7 +431,7 @@ body{
         </div>
     </section>
 -->
-
+<!--
 <section>
 
 <div class="row-mt-4 mb-4" style="margin-top: 100px !important;"></div>
@@ -497,9 +513,9 @@ body{
 </div>
 
 </section>
+-->
 
-
-<section id="our-process" class="section-padding bg-red">
+<section id="our-process" class="section-padding bg-red mt-4">
     <div class="svg-process-top-holder">
         <div class="svg-process-top"></div>
     </div>
@@ -566,7 +582,6 @@ body{
                         <p> <a href="http://www.evax.tn" class="color-grey">www.evax.tn</a></p>
                     </div>
 
-                    
                 </div>
             </div>
         </div>
@@ -613,11 +628,11 @@ body{
             <div class="col-12 text-center footer-content">
                 <ul class="footer-icon">
                     <li class="footer_list"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="footer_list"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li class="footer_list"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="footer_list"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                   
                 </ul>
-                <p class="sub-heading footer_text text-black"><i class="far fa-copyright"></i>2021 Centre National de l'Informatique CNI</p>
+                <p class="sub-heading footer_text text-black"><i class="far fa-copyright"></i>eVAX هو نتيجة عمل والتزام وطني مشترك من طرف المركز الوطني للإعلامية، الهيئة العليا المستقلة للانتخابات، مركز الإعلاميّة لوزارة الصحّة، الوكالة الوطنية للسلامة المعلوماتية، مشغّلي الاتصالات (إتّصالات تونس، أوريدو و أورانج)، وزارة الصحّة و وزارة تكنولوجيات الإتّصال.
+                    عند نقرك زرّ "إضافة طلب التسجيل" من استمارة طلب التسجيل الخاص بك على موقعنا evax.tn، فإنك تشير إلى أنك على دراية بالشروط والأحكام سياسات الخصوصية . وأنك توافق طواعية على البنود والشروط المنصوص عليها.
+                    الجمهورية التونسية - وزارة الصحة - بوابة التسجيل لحملة اللقاح ضد كوفيد 19 - جميع الحقوق محفوظة © 2021</p>
 
             </div>
         </div>
@@ -642,6 +657,7 @@ body{
 <script src="../vendor/js/contact_us.js"></script>
 <script src="../vendor/js/script.js"></script>
 <script src="../vendor/js/custom.js"></script>
+<script src="./vendor/js/time.js"></script>
 </body>
 
 </html>
