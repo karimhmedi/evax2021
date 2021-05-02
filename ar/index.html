@@ -14,7 +14,7 @@
     <title>Covax Vaccin anti coronavirus</title>
     <link rel="stylesheet" href="../vendor/css/jquery.fancybox.min.css">
     <!-- Favicon -->
-    <link rel="icon" href="../vendor/css/img/favicon.ico">
+    <link rel="icon" href="../images/favicon.png">
     <!-- Bundle -->
    <!-- <link rel="stylesheet" href="vendor/scss/timeline.scss"> -->
     <link rel="stylesheet" href="../vendor/css/bundle.min.css">
@@ -203,7 +203,7 @@ body{
                                             </div>
                                             <h3 style="font-size: 18px; white-space:pre-line" class="box-text mb-sm-2 mt-sm-2 mb-md-3 mt-md-3 mb-lg-3 mt-lg-3">
                                                 عدد المسجلين :
-                                                <span class="h2">526120</span>
+                                                <span class="h2" id="totaleinscri"></span>
                                                 <span id='horloge'></span>
                                                 <span id='today'></span>
                                             </h3>
@@ -390,53 +390,49 @@ body{
         </div>
 </section>
 -->
-<!--
-    <section id="info" class="stats bg-light-gray section-padding col-12">
+<section id="info" class="stats bg-light-gray section-padding col-12">
         
-        <div class="container col-12">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 text-center wow fadeIn" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeIn;">
-                    <div class="main-title mb-md-5 wow fadeIn" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeIn;">
-                        <h5> Le Vaccin dans la population tunisienne </h5>
-                        <h2> Plus de Statistique Sur le Vaccin  </h2>
-                    </div>
+    <div class="container col-12">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center wow fadeIn" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeIn;">
+                <div class="main-title mb-md-5 wow fadeIn" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeIn;">
+                    <h5> اللقاح لدى الشعب التونسي </h5>
+                    <h2> المزيد من إحصائيات عن اللقاح  </h2>
                 </div>
             </div>
-            <div class="row content-center">
-                <div class="col-md-3 col-sm-12 stats-box mb-xs-2rem">
-                    <div class="serial-box center-block wow zoomIn" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: zoomIn;">
-                        <i class="fa fa-smile" aria-hidden="true"></i>
-                        <p class="pt-3 pb-3 numscroller">1391</p>
-                        <h6 class="mb-0">Vaccinés</h6>
-                    </div>
+        </div>
+        <div class="row content-center">
+
+            <div class="col-md-3 col-sm-12 stats-box mb-xs-2rem">
+                <div class="serial-box center-block wow zoomIn" data-wow-delay="500ms" style="visibility: visible; animation-delay: 500ms; animation-name: zoomIn;">
+                    <i class="fa fa-sticky-note" aria-hidden="true"></i>
+                    <p class="pt-3 pb-3 numscroller" id="nbinscrit"></p>
+                    <h6 class="mb-0">مسجلين</h6>
                 </div>
-                <div class="col-md-3 col-sm-12 stats-box mb-xs-2rem">
-                    <div class="serial-box center-block wow zoomIn" data-wow-delay="500ms" style="visibility: visible; animation-delay: 500ms; animation-name: zoomIn;">
-                        <i class="fa fa-sticky-note" aria-hidden="true"></i>
-                        <p class="pt-3 pb-3 numscroller">445</p>
-                        <h6 class="mb-0">Inscrites</h6>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-12 stats-box mb-xs-2rem">
-                    <div class="serial-box center-block wow zoomIn" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: zoomIn;">
-                        <i class="las la-syringe"></i>
-                        <p class="pt-3 pb-3 numscroller">133</p>
-                        <h6 class="mb-0">Recue</h6>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-12 stats-box sm-mt-2rem mb-xs-2rem">
-                    <div class="serial-box center-block wow zoomIn" data-wow-delay="700ms" style="visibility: visible; animation-delay: 700ms; animation-name: zoomIn;">
-                        <i class="las la-spinner"></i>
-                        <p class="pt-3 pb-3 numscroller">775</p>
-                        <h6 class="mb-0">En attente</h6>
-                    </div>
-                </div>
-               
             </div>
 
+            <div class="col-md-3 col-sm-12 stats-box mb-xs-2rem">
+                <div class="serial-box center-block wow zoomIn" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: zoomIn;">
+                    <i class="las la-syringe"></i>
+                    <p class="pt-3 pb-3 numscroller" id="nbvaccine1" ></p>
+                    <h6 class="mb-0">ملقح جرعة أولى</h6>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-12 stats-box mb-xs-2rem">
+                <div class="serial-box center-block wow zoomIn" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: zoomIn;">
+                    <i class="fa fa-smile" aria-hidden="true"></i>
+                    <p class="pt-3 pb-3 numscroller" id="nbvaccine2"></p>
+                    <h6 class="mb-0">ملقح جرعة ثانية</h6>
+                </div>
+            </div>
+            
+           
         </div>
-    </section>
--->
+
+    </div>
+</section>
+
 <!--
 <section>
 
@@ -651,6 +647,10 @@ body{
 <script src="../vendor/js/bundle.min.js"></script>
 <script src="../vendor/js/bootstrap.min.js"></script>
 <!-- Plugin Js -->
+<script src="../vendor/js/moment-with-locales.js"></script>
+<script src="../vendor/js/scripts.js"></script>
+<script src="../vendor/js/waypoints.min.js"></script>
+<script src="../vendor/js/dist/jquery.counterup.js"></script>
 <script src="../vendor/js/jquery.fancybox.min.js"></script>
 <script src="../vendor/js/jquery.cubeportfolio.min.js"></script>
 <script src="../vendor/js/jquery-countTo.js"></script>
