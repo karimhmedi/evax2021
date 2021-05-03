@@ -331,6 +331,7 @@ h1, h2, h3, h4, h5, h6{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    
 }
 
 .carousel-item:nth-child(3) {
@@ -427,7 +428,7 @@ cursor: pointer;
 }
 
 .navbar .nav-item a.nav-link{
-    font-family: 'Droid Arabic Kufi', serif !important;
+    /*font-family: 'Droid Arabic Kufi', serif !important;*/
     font-size: 1rem;
     color: rgb(255, 255, 255) !important;
     text-decoration: none;
@@ -3805,8 +3806,29 @@ a.page-link{
         right: auto;
         top: auto;
         bottom: 4%;
-        left: 2%;
+        left: 70%;
     }
+
+
+
+    .background-carousal {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+    }
+    
+    .block1
+    {
+        display: none;
+    }
+    
+    .main-content .main-heading {
+        font-size: 28px;
+    }
+
+
+
     .column-display{
         display: none;
     }
@@ -3838,7 +3860,7 @@ a.page-link{
         visibility: hidden;
     }
     .col-height{
-        height: 52vh;
+        height: 40vh;
     }
     #background-carousal .carousal-overlay {
         left: 15px;
@@ -3877,8 +3899,46 @@ a.page-link{
         padding: 16.5px 33px;
     }
     .social_icon {
-        bottom: 1%;
+        /*bottom: 1%;*/
+        position: absolute;
+        right: auto;
+        top: auto;
+        bottom: -3%;
+        left: 50%;
     }
+
+    .image-div {
+        width: 100%;
+        height: auto !important;
+}
+
+.social_icon {
+    position: absolute;
+    right: auto;
+    top: auto;
+    bottom: 4%;
+    left: 70%;
+}
+
+
+.background-carousal {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.block1
+{
+    display: none;
+}
+
+.main-content .main-heading {
+    font-size: 28px;
+}
+
+
+
 }
 
 a:focus, a:active {
