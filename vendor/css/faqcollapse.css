@@ -1,0 +1,173 @@
+.cardMateri {
+    background-color: #F1F6E3;
+    border-radius: 8px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.21);
+    box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.21);
+}
+
+#accordion .panel{
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+#accordion .panel-heading{
+    padding: 0;
+    border: none;
+    border-radius: 3px;
+}
+
+#accordion .panel-title a {
+    display: block;
+    padding: 12px 15px;
+    background: #fff;
+    font-weight: 400;
+    color: #16AB50;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.05);
+    position: relative;
+    transition: all 0.5s ease 0s;
+}
+
+#accordion .panel-title a.collapsed{
+    box-shadow: none;
+    color: #676767;
+    text-decoration: none;
+    box-shadow: 0 1px 2px rgba(43,59,93,0.30);
+}
+
+#accordion .panel-title a:before,
+#accordion .panel-title a.collapsed:before{
+    content: "\f067";
+    font-family: "Font Awesome 5 Free";
+    width: 25px;
+    height: 25px;
+    line-height: 28px;
+    font-weight: 900;
+    color: #16AB50;
+    text-align: center;
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    transform: rotate(135deg);
+    transition: all 0.3s ease 0s;
+}
+
+#accordion .panel-title a.collapsed:before{
+    color: #676767;
+    transform: rotate(0);
+}
+
+#accordion .panel-title a:after{
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #ececec;
+    position: absolute;
+    top: 0;
+    right: 55px;
+}
+
+#accordion .panel-body{
+    border: none;
+    font-size: 15px;
+    color: #615f5f;
+    background-color: #fff;
+    line-height: 27px;
+}
+
+#accordion .panel-body .isiMateri {
+    padding: 25px;
+    margin-bottom: 10px;
+}
+
+/*dekstop*/
+@media screen and (min-width: 1024px) {
+    .paddingLuar, .cardMateri {
+        /*padding: 3rem;*/
+    }
+    .judulUtama {
+        font-size: 32px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    .isiMateri p:nth-child(1) {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .isiMateri p:nth-child(2) {
+        font-size: 15px;
+        text-align: justify;
+    }
+    #accordion .panel-title a {
+        font-size: 19px;
+    }
+    #accordion .panel-title a:before,
+    #accordion .panel-title a.collapsed:before {
+        font-size: 16px;
+    }
+}
+
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .paddingLuar, .cardMateri {
+       /* padding: 2rem;*/
+    }
+    .judulUtama {
+        font-size: 25px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .isiMateri p:nth-child(1) {
+        font-size: 21px;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+        text-align: center;
+    }
+    .isiMateri p:nth-child(2) {
+        font-size: 14px;
+        text-align: justify;
+    }
+    #accordion .panel-title a {
+        font-size: 16px;
+    }
+    #accordion .panel-title a:before,
+    #accordion .panel-title a.collapsed:before {
+        font-size: 13px;
+    }
+}
+
+/*HP*/ 
+@media screen and (max-width: 767px){
+    .paddingLuar, .cardMateri {
+       /* padding: 1rem;*/
+    }
+    .judulUtama {
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .isiMateri p:nth-child(1) {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    .isiMateri p:nth-child(2) {
+        font-size: 12px;
+        text-align: justify;
+    }
+    #accordion .panel-title a {
+        font-size: 13px;
+    }
+    #accordion .panel-title a:before,
+    #accordion .panel-title a.collapsed:before {
+        font-size: 11px;
+    }
+}
