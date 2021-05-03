@@ -3918,8 +3918,18 @@ a.page-link{
     display: none;
 }
 
+.process-wrapp {
+      
+    display: grid !important;
+  
+}
+
 .main-content .main-heading {
     font-size: 28px;
+}
+
+.col-height-features {
+    height: 350px;
 }
 
 }

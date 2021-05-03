@@ -3809,8 +3809,6 @@ a.page-link{
         left: 70%;
     }
 
-
-
     .background-carousal {
         position: relative;
         overflow: hidden;
@@ -3827,7 +3825,15 @@ a.page-link{
         font-size: 28px;
     }
 
+    .col-height-features {
+        height: 350px;
+    }
 
+    .process-wrapp {
+      
+        display: grid;
+      
+    }
 
     .column-display{
         display: none;
