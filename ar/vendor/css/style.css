@@ -32,6 +32,9 @@
 
 body{
     color: #5f5d5d;
+    direction: rtl !important;
+    font-family: 'Droid Arabic Kufi' !important;
+
 }
 
 .pr-0
@@ -603,6 +606,15 @@ nav.fill ul li a:hover:after, nav.fill ul li a.active:after {
     animation-fill-mode: both;
 
 }
+
+.navbar.fixed-menu .my-tog-btn span{
+    background-color: rgb(15, 14, 14);
+    margin-bottom: 5px;
+    height: 2px;
+    width: 100%;
+    display: block;
+}
+
 @-webkit-keyframes animationFade {
     from {
         opacity: 0;
@@ -1316,7 +1328,7 @@ ul.social-icon li a{
 }
 
 .outer-window .navbar-nav{
-    margin-top: 12%;
+    margin-top: 2%;
 }
 
 .outer-window .close-outerwindow{
@@ -3831,7 +3843,7 @@ a.page-link{
 
     .process-wrapp {
       
-        display: grid;
+        display: grid !important;
       
     }
 
@@ -3900,17 +3912,18 @@ a.page-link{
     }
 }
 
-@media (min-width:400px) and (max-width:767px){
+@media (min-width:300px) and (max-width:767px){
     .custom-box {
         padding: 16.5px 33px;
     }
     .social_icon {
         /*bottom: 1%;*/
-        position: absolute;
+       /* position: absolute;
         right: auto;
         top: auto;
         bottom: -3%;
-        left: 50%;
+        left: 50%;*/
+        display: none;
     }
 
     .image-div {
@@ -3919,11 +3932,12 @@ a.page-link{
 }
 
 .social_icon {
-    position: absolute;
+    /*position: absolute;
     right: auto;
     top: auto;
     bottom: 4%;
-    left: 70%;
+    left: 70%;*/
+    display: none;
 }
 
 
@@ -3943,6 +3957,11 @@ a.page-link{
     font-size: 28px;
 }
 
+.process-wrapp {
+      
+    display: grid !important;
+  
+}
 
 
 }
@@ -4282,7 +4301,7 @@ input[type=checkbox]:not(old):checked + label > span {
 }
 
 .svg-process-top-holder .svg-process-top{
-    background: url('../images/zig-line-red.svg');
+    /*background: url('../images/zig-line-red.svg');*/
     background-repeat: repeat-x;
     height: 26px;
 }
@@ -4297,7 +4316,7 @@ input[type=checkbox]:not(old):checked + label > span {
 }
 
 .svg-process-bottom-holder .svg-process-bottom{
-    background: url('../images/zig-line-red.svg');
+  /*  background: url('../images/zig-line-red.svg');*/
     background-repeat: repeat-x;
     height: 26px;
 }

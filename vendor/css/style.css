@@ -32,6 +32,8 @@
 
 body{
     color: #5f5d5d;
+    direction: ltr !important;
+
 }
 
 .pr-0
@@ -477,6 +479,15 @@ cursor: pointer;
     width: 100%;
     display: block;
 }
+
+.navbar.fixed-menu .my-tog-btn span{
+    background-color: rgb(15, 14, 14);
+    margin-bottom: 5px;
+    height: 2px;
+    width: 100%;
+    display: block;
+}
+
 .navbar-btn{
     background-color: #00b0cd;
     border-color: #00b0cd;
@@ -493,7 +504,7 @@ cursor: pointer;
 }
 a.navbar-btn{
     font-size: 15px;
-    font-family: 'Montserrat', sans-serif;;
+   /* font-family: 'Montserrat', sans-serif;*/
     color: rgb(255, 255, 255) !important;
     text-decoration: none;
 }
@@ -820,7 +831,7 @@ nav.fill ul li a:hover:after, nav.fill ul li a.active:after {
 
 a.btn{
     font-size: 12px;
-    font-family: 'Montserrat', sans-serif;;
+   /* font-family: 'Montserrat', sans-serif;*/
     color: rgb(255, 255, 255) !important;
     text-decoration: none;
     line-height: 1.8;
@@ -1311,7 +1322,7 @@ ul.social-icon li a{
 }
 
 .outer-window .navbar-nav{
-    margin-top: 12%;
+    margin-top: 2%;
 }
 
 .outer-window .close-outerwindow{
@@ -3596,10 +3607,11 @@ a.page-link{
         display: flex;
     }
     .social_icon {
-        position: absolute;
+       /* position: absolute;
         right: auto;
         top: 93%;
-        left: 18%;
+        left: 18%;*/
+        display: none;
     }
     .margin-top-sm{
         margin-top: 100px;
@@ -3650,10 +3662,11 @@ a.page-link{
         display: block;
     }
     .social_icon {
-        position: absolute;
+        /*position: absolute;
         right: auto;
         top: 94%;
-        left: 12%;
+        left: 12%;*/
+        display: none;
     }
     ul.social-icon{
         display: -webkit-box;
@@ -3797,11 +3810,12 @@ a.page-link{
         margin-right: 5%;
     }
     .social_icon {
-        position: absolute;
+       /* position: absolute;
         right: auto;
         top: auto;
         bottom: 12%;
-        left: 70%;
+        left: 70%;*/
+        display: none;
     }
     .column-display{
         display: none;
@@ -3888,11 +3902,12 @@ a.page-link{
         padding: 16.5px 33px;
     }
     .social_icon {
-        position: absolute;
+       /* position: absolute;
         right: auto;
-        top: auto;
+        top: auto;*/
        /* bottom: -3%;
         left: 50%;*/
+        display: none;
     }
 
     .section-padding {
@@ -4269,7 +4284,7 @@ input[type=checkbox]:not(old):checked + label > span {
 }
 
 .svg-process-top-holder .svg-process-top{
-    background: url('../images/zig-line-red.svg');
+   /* background: url('../images/zig-line-red.svg');*/
     background-repeat: repeat-x;
     height: 26px;
 }
@@ -4284,7 +4299,7 @@ input[type=checkbox]:not(old):checked + label > span {
 }
 
 .svg-process-bottom-holder .svg-process-bottom{
-    background: url('../images/zig-line-red.svg');
+   /* background: url('../images/zig-line-red.svg');*/
     background-repeat: repeat-x;
     height: 26px;
 }
