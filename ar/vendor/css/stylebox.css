@@ -45,7 +45,7 @@
     - Loader
     - Media Queries   */
 
-
+    @import url('../../../vendor/police/droidarabickufi.css');
     ol, ul {
         margin: 0;
         padding: 0;
@@ -54,7 +54,7 @@
     .section-padding {position: relative; padding: 7.5rem 0; overflow: hidden;}
     
     .portfolio-padding {
-        padding: 7.5rem 0 4rem;
+        padding: 3.5rem 0 4rem;
     }
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Dosis', sans-serif;

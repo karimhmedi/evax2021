@@ -3,7 +3,7 @@ function callservicevax()
 {
         
   $.ajax({
-    url : 'https://apis.cni.tn/evax-stat/evax-stat',
+    url : 'https://apis.evax.tn/evax-stat/evax-stat',
     type : 'GET',
     dataType : 'json',
     success : function(resultat){

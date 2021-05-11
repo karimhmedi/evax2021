@@ -47,16 +47,6 @@ $(function ($) {
 
 });
 
-//******************PLAY AUDIO AND VIDEO************************//
-$('video, audio').mediaelementplayer({
-    // Do not forget to put a final slash (/)
-    pluginPath: 'https://cdnjs.com/libraries/mediaelement/',
-    // this will allow the CDN to use Flash without restrictions
-    // (by default, this is set as `sameDomain`)
-    shimScriptAccess: 'always'
-    // more configuration
-});
-
 // *******************CAROUSAL********************
 $('#carouselFade').carousel({
     interval: 5000,
@@ -341,33 +331,6 @@ function send_mails() {
 
 }
 
-//******************GALLERY POERFLIO************************//
-$("#flat-gallery").cubeportfolio({
-    layoutMode: 'grid',
-    filters: '#flat-filters',
-    defaultFilter: '*',
-    animationType: "quicksand",
-    gapHorizontal: 25,
-    gapVertical: 25,
-    gridAdjustment: "responsive",
-    mediaQueries: [{
-        width: 1500,
-        cols: 4
-    }, {
-        width: 1100,
-        cols: 4
-    }, {
-        width: 768,
-        cols: 3
-    }, {
-        width: 480,
-        cols: 2
-    },{
-        width: 320,
-        cols: 2
-    }],
-});
-
 
 //*************SCROLL TOP APPEAR**********8
 $(window).on('scroll', function () {
@@ -407,7 +370,7 @@ $('#blog-carousal').owlCarousel({
 
 
 //*******************TESTIMONIAL OWL CAROUSAL*************************
-$('#testimonial-carousal').owlCarousel({
+/*$('#testimonial-carousal').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
@@ -425,7 +388,7 @@ $('#testimonial-carousal').owlCarousel({
     }
 });
 
-
+*/
 /*************************FACULTY MEMBER OWL CAROUSAL*********************/
 $("#ourteachers-slider").owlCarousel({
     items: 3,
@@ -450,117 +413,7 @@ $("#ourteachers-slider").owlCarousel({
 
 
 
-//************************CUBE PORTFOLIO FOR GALLERY****************
 
-(function($, window, document, undefined) {
-    'use strict';
-
-    // init cubeportfolio
-    $('#js-grid-mosaic').cubeportfolio({
-        filters: '#js-filters-mosaic',
-        layoutMode: 'mosaic',
-        sortByDimension: true,
-        mediaQueries: [{
-            width: 1500,
-            cols: 5,
-        }, {
-            width: 1100,
-            cols: 4,
-        }, {
-            width: 800,
-            cols: 3,
-        }, {
-            width: 480,
-            cols: 2,
-            options: {
-                caption: '',
-                gapHorizontal: 15,
-                gapVertical: 15,
-            }
-        }],
-        defaultFilter: '*',
-        animationType: 'quicksand',
-        gapHorizontal: 15,
-        gapVertical: 15,
-        gridAdjustment: 'responsive',
-        caption: 'zoom',
-        displayType: 'sequentially',
-        displayTypeSpeed: 100,
-
-        // lightbox
-        lightboxDelegate: '.cbp-lightbox',
-        lightboxGallery: true,
-        lightboxTitleSrc: 'data-title',
-        lightboxCounter: '<div class="cbp-popup-lightbox-counter">{{current}} of {{total}}</div>',
-
-        plugins: {
-            loadMore: {
-                element: '#js-loadMore-mosaic',
-                action: 'click',
-                loadItems: 3,
-            }
-        },
-    });
-})(jQuery, window, document);
-
-var accordion = $('body').find('[data-behavior="accordion"]');
-var expandedClass = 'is-expanded';
-
-$.each(accordion, function () { // loop through all accordions on the page
-
-    var accordionItems = $(this).find('[data-binding="expand-accordion-item"]');
-
-    $.each(accordionItems, function () { // loop through all accordion items of each accordion
-        var $this = $(this);
-        var triggerBtn = $this.find('[data-binding="expand-accordion-trigger"]');
-
-        var setHeight = function (nV) {
-            // set height of inner content for smooth animation
-            var innerContent = nV.find('.accordion__content-inner')[0],
-                maxHeight = $(innerContent).outerHeight(),
-                content = nV.find('.accordion__content')[0];
-
-            if (!content.style.height || content.style.height === '0px') {
-                $(content).css('height', maxHeight);
-            } else {
-                $(content).css('height', '0px');
-            }
-        };
-
-        var toggleClasses = function (event) {
-            var clickedItem = event.currentTarget;
-            var currentItem = $(clickedItem).parent();
-            var clickedContent = $(currentItem).find('.accordion__content')
-            $(currentItem).toggleClass(expandedClass);
-            setHeight(currentItem);
-
-            if ($(currentItem).hasClass('is-expanded')) {
-                $(clickedItem).attr('aria-selected', 'true');
-                $(clickedItem).attr('aria-expanded', 'true');
-                $(clickedContent).attr('aria-hidden', 'false');
-
-            } else {
-                $(clickedItem).attr('aria-selected', 'false');
-                $(clickedItem).attr('aria-expanded', 'false');
-                $(clickedContent).attr('aria-hidden', 'true');
-            }
-        }
-
-        triggerBtn.on('click', event, function (e) {
-            e.preventDefault();
-            toggleClasses(event);
-        });
-
-        // open tabs if the spacebar or enter button is clicked whilst they are in focus
-        $(triggerBtn).on('keydown', event, function (e) {
-            if (e.keyCode === 13 || e.keyCode === 32) {
-                e.preventDefault();
-                toggleClasses(event);
-            }
-        });
-    });
-
-});
 
 
 
