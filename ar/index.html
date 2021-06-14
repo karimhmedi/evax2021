@@ -90,8 +90,16 @@ body{
                     <li class="nav-item">
                         <a class="nav-link" href="#faq">الأسئلة المتداولة</a>
                     </li>
-                    <li class="nav-item">
+                    <!--<li class="nav-item">
                         <a class="nav-link" href="#info">معلومات</a>
+                    </li>-->
+
+                    <li class="nav-item dropdown" id="nv">
+                        <a class="nav-link dropdown-toggle" id="info" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">معلومات</a>
+                        <ul class="dropdown-menu" aria-labelledby="info">
+                            <li class="dropdown-item" href="#"><a>dashboard 1</a></li>
+                            <li class="dropdown-item" href="#"><a>dashboard 2</a></li>
+                        </ul>
                     </li>
     
                     <li class="nav-item">
@@ -118,30 +126,33 @@ body{
             <nav class="navbar1">
             <a class="close-outerwindow"><i class="las la-times"></i></a>
                 <a href="http://evax.tn"><img src="vendor/img/logo2.png" alt="logo" class="logo-small-nav default"></a>
-            <ul class="navbar-nav" style="text-align: center;">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">الرئيسية</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.evax.tn/home.xhtml#inscription" target="_blank">تسجيل</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#faq">الأسئلة المتداولة</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#info">معلومات</a>
-                </li>
+           
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#inscription">إتصل بنا</a>
-                </li>
-            </ul>
-            <a class="text-black btn-block wrang-btn rounded-pill navbar-btn "  href="https://citoyen.evax.tn" target="_blank" style="color: #414141">فضاء المواطن</a>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item" style="text-align: center;">
-                <a class="nav-link"  style="color: #fff" href="../index.html">Français </a>
-                </li>
-                </ul>
+                <div id="jquery-accordion-menu" class="jquery-accordion-menu" style="text-align:center;">
+                    <div class="jquery-accordion-menu-header">ايفاكس </div>
+                    <ul>
+                        <li class="active"><a href="#"><i class="fa fa-home"></i>الرئيسية </a></li>
+                        <li><a class="mnav" href="https://www.evax.tn/home.xhtml#inscription"><i class="fa fa-glass"></i>تسجيل </a></li>
+                        <li><a class="mnav" href="#faq"><i class="fa fa-file-image-o"></i>الأسئلة المتداولة </a><span class="jquery-accordion-menu-label">6 </span></li>
+                        <li><a href="#"><i class="fa fa-cog"></i>معلومات </a>
+                            <ul class="submenu">
+                                
+                                <li><a class="mnav" href="#">dashboard 1 </a></li>
+                                <li><a class="mnav" href="#">dashboard 2 </a>
+                                    
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li><a class="mnav" href="#inscription">إتصل بنا </a></li>
+                        <li><a class="mnav" href="https://citoyen.evax.tn"><i class="fa fa-newspaper-o"></i>فضاء المواطن </a></li>
+                        <li><a class="mnav" href="../index.html"><i class="fa fa-suitcase"></i>Français </a>
+                            
+                        </li>
+                        
+                    </ul>
+                   
+                </div>
         
         </nav>
     </div>

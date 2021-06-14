@@ -81,8 +81,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#faq">FAQ</a>
                         </li>
-                        <li class="nav-item">
+                        <!--<li class="nav-item">
                             <a class="nav-link" href="#info">Info</a>
+                        </li>-->
+
+                        <li class="nav-item dropdown" id="nv">
+                            <a class="nav-link dropdown-toggle" id="info" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</a>
+                            <ul class="dropdown-menu" aria-labelledby="info">
+                                <li class="dropdown-item" href="#"><a>dashboard 1</a></li>
+                                <li class="dropdown-item" href="#"><a>dashboard 2</a></li>
+                            </ul>
                         </li>
 
                         <li class="nav-item">
@@ -110,30 +118,34 @@
             <nav class="navbar1">
             <a class="close-outerwindow"><i class="las la-times"></i></a>
                 <a href="#background-carousal"><img src="vendor/img/logo2.png" alt="logo" class="logo-small-nav default"></a>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Accueil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.evax.tn/home.xhtml#inscription" target="_blank">S'inscrire</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#faq">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#info">Info</a>
-                </li>
+        
+                <div id="jquery-accordion-menu" class="jquery-accordion-menu">
+                    <div class="jquery-accordion-menu-header">EVAX </div>
+                    <ul>
+                        <li class="active"><a href="#"><i class="fa fa-home"></i>Accueil </a></li>
+                        <li><a class="mnav" href="https://www.evax.tn/home.xhtml#inscription"><i class="fa fa-glass"></i>S'inscrire </a></li>
+                        <li><a class="mnav" href="#faq"><i class="fa fa-file-image-o"></i>FAQ </a><span class="jquery-accordion-menu-label">6 </span></li>
+                        <li><a href="#"><i class="fa fa-cog"></i>Info </a>
+                            <ul class="submenu">
+                                
+                                <li><a class="mnav" href="#">dashboard 1 </a></li>
+                                <li><a class="mnav" href="#">dashboard 2 </a>
+                                    
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li><a class="mnav" href="#inscription">Contactez Nous </a></li>
+                        <li><a class="mnav" href="https://citoyen.evax.tn"><i class="fa fa-newspaper-o"></i>Espace Citoyen </a></li>
+                        <li><a class="mnav" href="./ar/index.html"><i class="fa fa-suitcase"></i>العربية </a>
+                            
+                        </li>
+                        
+                    </ul>
+                   
+                </div>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#inscription">Contactez Nous</a>
-                </li>
-            </ul>
-            <a class="text-black btn-block wrang-btn rounded-pill navbar-btn "  href="https://citoyen.evax.tn" target="_blank" style="color: #414141">Espace Citoyen</a>
-            <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-            <a class="nav-link arabe"  style="color: #fff" href="./ar/index.html">العربية </a>
-            </li>
-            </ul>
+
         </nav>
     </div>
     </div>
